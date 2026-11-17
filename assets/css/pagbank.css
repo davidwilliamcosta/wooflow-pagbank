@@ -1,0 +1,152 @@
+.wooflow-pagbank-tax-row[hidden] {
+    display: none !important;
+}
+
+.wooflow-pagbank-wrapper {
+    margin-top: 12px;
+}
+
+.wooflow-pagbank-card-description {
+    margin-bottom: 30px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+.wooflow-pagbank-warning {
+    background: #fff3cd;
+    border-left: 3px solid #f59e0b;
+    padding: 10px 12px;
+    border-radius: 0 4px 4px 0;
+    margin: 0 0 12px;
+}
+
+.wooflow-pagbank-info {
+    background: #f0f4ff;
+    border-left: 3px solid #2563eb;
+    padding: 10px 14px;
+    border-radius: 0 4px 4px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+.wooflow-pagbank-wrapper input,
+.wooflow-pagbank-wrapper select {
+    width: 100%;
+}
+
+.wooflow-pagbank-wrapper::after {
+    content: "Pagamento 100% seguro via PagBank";
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+.woocommerce-order-details.wooflow-pagbank-payment-details,
+.woocommerce-order-details.wooflow-pagbank-payment-details--pix,
+.woocommerce-order-details.wooflow-pagbank-payment-details--card,
+.woocommerce-order-details.wooflow-pagbank-payment-details--boleto,
+.woocommerce-order-details .wooflow-pagbank-payment-details,
+.woocommerce-order-details .wooflow-pagbank-payment-details--pix,
+.woocommerce-order-details .wooflow-pagbank-payment-details--card,
+.woocommerce-order-details .wooflow-pagbank-payment-details--boleto {
+    display: block !important;
+}
+
+.wooflow-pagbank-payment-details p:first-of-type {
+    font-size: 15px;
+}
+
+.wooflow-pagbank-card-input-wrapper {
+    position: relative;
+    display: block;
+}
+
+.wooflow-pagbank-card-input-wrapper #wooflow_pagbank_number,
+.wooflow-pagbank-card-input-wrapper .wooflow-pagbank-blocks-number {
+    padding-right: 68px;
+}
+
+.wooflow-pagbank-card-brand-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 28px;
+    border-radius: 4px;
+    border: 1px solid #d1d5db;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 42px 24px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .2s ease;
+}
+
+.wooflow-pagbank-card-brand-icon.is-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.wooflow-pagbank-card-brand-label {
+    display: block;
+    margin-top: 6px;
+    color: #6b7280;
+    font-size: 12px;
+}
+
+.wooflow-pagbank-accepted-brands {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin: 0 0 8px;
+}
+
+.wooflow-pagbank-accepted-brands .wooflow-pagbank-brand-item {
+    width: 44px;
+    height: 28px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 38px 22px;
+    opacity: .75;
+    transition: opacity .2s ease, transform .2s ease, border-color .2s ease;
+}
+
+.wooflow-pagbank-accepted-brands .wooflow-pagbank-brand-item.is-active {
+    opacity: 1;
+    transform: translateY(-1px);
+    border-color: #2563eb;
+}
+
+.wooflow-pagbank-inline-fields {
+    display: flex;
+    gap: 12px;
+}
+
+.wooflow-pagbank-inline-fields .form-row,
+.wooflow-pagbank-inline-fields .wooflow-pagbank-field {
+    float: none;
+    width: 50%;
+    margin-right: 0;
+}
+
+.wooflow-pagbank-copy {
+    margin-top: 4px;
+}
+
+@media (max-width: 680px) {
+    .wooflow-pagbank-inline-fields {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .wooflow-pagbank-inline-fields .form-row,
+    .wooflow-pagbank-inline-fields .wooflow-pagbank-field {
+        width: 100%;
+    }
+}
